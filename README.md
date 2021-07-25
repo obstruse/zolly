@@ -18,7 +18,7 @@ Camera motion using Actobotics "Channel Slider Kit A" (https://www.servocity.com
 
 The entire process takes about 5 minutes for a 50 frame sequence, or about 6 seconds per frame.
 
-#### Create Zoom Table
+#### Create zoomFocal.h
 
 Load the file `chdk/zmtbl.bas` on the camera; switch to __ALT__ mode; press shutter to start.  The camera lens should extend and rapidly move through all the zoom steps.  The results are saved to: `A/CHDK/LOGS/LOG_0001.TXT`.  Download the file as `zoomFocal.h` and include in the ESP8266 build.
 
