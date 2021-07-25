@@ -1,14 +1,14 @@
 ![](images/head5.gif)
 # Zolly
-Dolly Zoom using ESP8266 and CHDK (Canon Hack Development Kit).
+Dolly Zoom using ESP8266, Canon ELPH330HS, and CHDK (Canon Hack Development Kit).
 
 *A dolly zoom is an in-camera effect where you dolly towards or away from a subject while zooming in the opposite direction.*
 
 CHDK is free software for some (not all) Canon PowerShot compact digital cameras. CHDK controls camera features using uBASIC and Lua scripts, enabling time lapse, motion detection,  etc.  (https://chdk.fandom.com/wiki/CHDK)
 
-The CHDK script increments the zoom step, sets focus and exposure. then waits for the remote trigger (a 100 mSec pulse on the USB power line)
+CHDK controls the camera functions: zoom, focus, exposure, and waits for the remote trigger (a 100 mSec pulse on the USB power line)
 
-The ESP8266 is loaded with a table of focal lengths for each of the camera's zoom steps.  For each zoom step, it calculates the distance required to maintain the image size, moves the camera to that position, then pulses the USB line to trigger the shot.
+The ESP8266 is loaded with a table of focal lengths for the camera's zoom lens.  For each zoom step, it calculates the distance required to maintain the image size, moves the camera to that position, then pulses the USB line to trigger the shot.
 
 ![USB](images/USB.png)
 
